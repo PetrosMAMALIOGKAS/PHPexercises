@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+	<head>
+		<title>formulaire php</title>
+	</head>
+	<body>
+		<form action="traitementExo1.php" method="post">
+			<fieldset>
+				<legend>formulaire PHP</legend>
+				<label for="name">nom</label> 
+				<input type="text" id="name" name="name"/><br />
+				<label for="password">password</label>
+				<input type="text" id="password" name="password" /> <br/> <br/>
+				
+				<label for="choiseMale">Homme</label>
+				<input type="radio" id="choiseMale" name="sexe" value="homme" /> <br />
+				<label for="choiseFemale">Femme</label>
+				<input type="radio" id="choiseFemale" name="sexe" value="femme" /> <br />
+				
+				<label for="ville">Ville :</label>
+				<select  name="ville" id="ville">
+					<option value="Paris">Paris</option>
+					<option value="Lyon">Lyon</option>
+					<option value="Marseille">Marseille</option>
+				</select>
+				
+				
+				<fieldset>
+					<legend>loisirs</legend>
+					<input type="checkbox" id="coding" value="coding" name="loisirs" />
+					<label for="coding">coding</label> <br />
+					<input type="checkbox" id="musique" value="musique" name="loisirs" />
+					<label for="musique">musique</label> <br/>
+					<input type="checkbox" id="escalade" value="escalade" name="loisirs" />
+					<label for="escalade">escalade</label> <br />
+				</fieldset>
+				
+				<label for="animals">Animaux de companie :</label> <br/>
+				<select name="animaux" id="animals" multiple>
+					<option value="chien">Chien</option>
+					<option value="chat">Chat</option>
+					<option value="tortue">Tortue</option>
+				</select>
+			</fieldset>
+			<input type="submit" value="submit" />
+		</form>
+	</body>
+</html>

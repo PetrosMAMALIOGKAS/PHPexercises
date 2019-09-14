@@ -1,0 +1,47 @@
+Programmation objet de base en PHP
+
+Le but de ce tp est d'illustrer en PHP l'heritage sur un exemple classique de geometrie; les polygones et leurs specialisation en rectangles, en triangles etc....
+
+Un polygones sera caracteriser par ses sommets qui sont des points.
+
+Exercice 1
+
+Ecrire dans un fichier Point.phpune classe pour representer des points en 2 dimensions. Elle comprendra au moins constructeurs ainsi qu'une methode pour calculer la distance d'un point a un autre et une methode toString pour pouvoir afficher les coordonnees d'un point sous la forme (x,y)
+Exercice 2
+
+Ecrire dans un fichier Polygone.php une classe polygone ou un polygome est un ensemble (un tableau) de points. Elle aura au moins un constructeur prenant en arguments les points qui composent le polygone.
+Exercice 3
+
+La munir d'une methode pour calculer le nombre de sommets ainsi que d'une methode pour calculer le perimetre.
+Exercice 4
+
+Ajouter une methode toString pour l'affichage d'un polgone par l'affichage de la liste des sommets (les points).
+Exercice 5
+
+Ecrire un fichier "testPolynome.php" pour tester vos polygones et leur methodes.
+Par exemple
+
+$P= new Polygone(new Point(1,1), new Point(2,2),new Point(1,2));
+print("je suis un polygone de sommet(s)".$P);
+print("et de perimetre ".$P->perimetre());
+echo "
+";
+affichera:
+je suis un polygone de sommet(s) , (1,1) , (2,2) , (1,2)
+et de perimetre 3.41421356237
+Exercice 6
+
+Ecrire dans un fichier Rectangle.php une classe rectangle qui specialise les polygones. Le constructeurs prend deux points en argument correspondants aux coins superieur gauche et inferieur droit)
+Exercice 7
+
+Ajouter des methodes pour calculer la longueur et la largeur.
+Exercice 8
+
+Testez les ! puis remarquez que pour un rectangle, il existe une facon plus rapide de calculer le perimetre donc redefinissez la methode perimetre.
+Exercice 9
+
+Ecrire une classe triangle qui herite de polygone.
+Exercice 10
+
+Trouvez des operations specifiques aux triangles et implementez-les. testez le tout ! 
+N'oublier pas d'utiliser l'autoloading dans le fichier de test.
